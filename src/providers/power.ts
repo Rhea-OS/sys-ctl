@@ -88,7 +88,7 @@ export default class PowerSettings extends SettingsProvider<PowerPreferences> {
             .addItem(i => i
                 .setIcon('moon')
                 .setTitle('Suspend')
-                .onClick(_ => this.plugin.executeCommand('obsidian-os/sysctl:suspend')))
+                .onClick(_ => this.plugin.executeCommand('rhea-os/sysctl:suspend')))
             .addItem(i => i
                 .setIcon('power')
                 .setTitle('Shut Down'))
@@ -104,7 +104,7 @@ export default class PowerSettings extends SettingsProvider<PowerPreferences> {
                     .setDesc("Put the device into sleep mode")
                     .addButton(sleep => sleep
                         .setButtonText("Suspend")
-                        .onClick(_ => this.plugin.executeCommand('obsidian-os/sysctl:suspend')))
+                        .onClick(_ => this.plugin.executeCommand('rhea-os/sysctl:suspend')))
                     .addExtraButton(button => button
                         .setIcon("chevron-right")
                         .onClick(() => {
